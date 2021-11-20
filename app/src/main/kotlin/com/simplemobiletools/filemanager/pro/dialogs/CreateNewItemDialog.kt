@@ -38,10 +38,19 @@ class CreateNewItemDialog(val activity: SimpleActivity, val path: String, val ca
                                     createDirectory(newPath, this) {
                                         callback(it)
                                     }
-                                } else {
+                                }
+                                //modify:add dialog_radio_zip
+                                else if(view.dialog_radio_group.checkedRadioButtonId == R.id.dialog_radio_file){
                                     createFile(newPath, this) {
                                         callback(it)
                                     }
+                                }
+                                else{
+                                    val newPath = "$path/$name.zip"
+                                    createFile(newPath, this) {
+                                        callback(it)
+                                    }
+
                                 }
                             } else {
                                 activity.toast(R.string.invalid_name)

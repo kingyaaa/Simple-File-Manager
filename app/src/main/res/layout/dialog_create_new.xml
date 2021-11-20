@@ -39,14 +39,18 @@
             android:id="@+id/dialog_radio_file"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/medium_margin"
             android:minHeight="48dp"
-            android:text="@string/file" />
+            android:text="@string/file"
+            tools:ignore="DuplicateSpeakableTextCheck" />
 
         <com.simplemobiletools.commons.views.MyCompatRadioButton
             android:id="@+id/dialog_radio_zip"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="48dp"
-            android:text="@string/file" />
+            android:text="@string/zip" />
+
     </RadioGroup>
+
 </LinearLayout>
