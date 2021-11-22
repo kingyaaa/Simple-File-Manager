@@ -46,6 +46,7 @@ class CreateNewItemDialog(val activity: SimpleActivity, val path: String, val ca
                                     }
                                 }
                                 //modify:add dialog_radio_zip
+                                //zip could not be opened
                                 else{
                                     val newPath = "$path/$name.zip"
                                     createFile(newPath, this) {
