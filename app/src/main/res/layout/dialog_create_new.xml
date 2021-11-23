@@ -48,10 +48,18 @@
             android:id="@+id/dialog_radio_zip"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/medium_margin"
             android:minHeight="48dp"
             android:text="@string/zip" />
 
     </RadioGroup>
+
+    <com.simplemobiletools.commons.views.MyTextView
+        android:id="@+id/Select_Path"
+        android:layout_width="92dp"
+        android:layout_height="28dp"
+        android:text="@string/path" />
+
     <com.simplemobiletools.commons.views.MyTextView
         android:id="@+id/create_as_path"
         android:layout_width="match_parent"
