@@ -21,9 +21,6 @@ class CreateNewItemDialog(val activity: BaseSimpleActivity, var path: String, va
     private val view = activity.layoutInflater.inflate(R.layout.dialog_create_new, null)
 
     init {
-        //if (path.isEmpty()) {
-        //    path = "${activity.internalStoragePath}/${activity.getCurrentFormattedDateTime()}.txt"
-        //}
 
         var realPath = path.toString()
         val view = activity.layoutInflater.inflate(R.layout.dialog_create_new, null).apply {
@@ -68,7 +65,7 @@ class CreateNewItemDialog(val activity: BaseSimpleActivity, var path: String, va
                             else if(view.dialog_radio_group.checkedRadioButtonId == R.id.dialog_radio_file){
                                 createFile(newPath, this) {
                                     //config.addFavorite(fragment.currentPath)
-                                    //callback(it)
+                                    callback(it)
                                 }
                             }
                             else{
